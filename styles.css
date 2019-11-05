@@ -114,6 +114,12 @@ font-weight: bold;
   justify-content: space-around;
   align-items: center;
 }
+.unlocked-bonus {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
 .drink-bonus, .bomb-bonus, .lucky-charm-bonus{
   height: 10vh;
   width: 5vw;

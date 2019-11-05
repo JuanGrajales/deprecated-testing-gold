@@ -16,11 +16,16 @@ class Sound {
         this.crashingSound.src = "../music/crash-rock.mov"
         this.fallingSound = new Audio();
         this.fallingSound.src = "../music/falling-sound.mov"
+        this.level2 = new Audio();
+        this.level2.src = "../music/level2-main.mp3"
+        this.level3 = new Audio();
+        this.level3.src = "../music/level3-main.mp3"
         this.sound = document.createElement("audio");
         this.sound.setAttribute("preload", "auto");
         this.sound.setAttribute("controls", "none");
         this.sound.style.display = "none";
         document.body.appendChild(this.sound);
+        
     }
 
     playBackground(){
@@ -29,6 +34,13 @@ class Sound {
 
     stopBackground(){
         this.background.pause();
+    }
+    playLevel2(){
+        this.level2.play();
+    }
+
+    playLevel3(){
+        this.level3.play();
     }
 
     playGrabSound(){
