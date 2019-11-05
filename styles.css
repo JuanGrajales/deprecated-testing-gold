@@ -1,0 +1,183 @@
+body {
+  padding: 0px;
+  text-align: center;
+  overflow: hidden;
+  display:flex;
+  background-image: url("./images/wooden.jpeg") ;
+  flex-direction: column;
+  justify-content: space-around;
+  font-family: Haettenschweiler;
+}
+h4 {
+  font-size: 40px;
+  font-weight: bold;
+}
+.top {
+  height: 5vh;
+  width:100%;
+}
+.main-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+}
+.show-popup {
+  display: block;
+}
+.hide-popup {
+  display: none;
+}
+.modal-overlay {
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+/* display:none; */
+background-color: rgba(0,0,0,0.5);
+}
+#game-board {
+  float: left;
+  padding: 10px;
+  background-color: rgba(240, 167, 11, 0.877);
+  color: black;
+}
+.game-board-left, .game-board-right{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  height: 50vh;
+}
+#rock-board{
+background-image: url("./images/rock-background.jpg");
+background-position: center;
+background-size: contain;
+height: 85vh;
+padding:  0;
+}
+.score-board {
+  height: 30vh;
+  width: 20vw;
+  background-color:  rgba(240, 167, 11, 0.877);
+  border: 4px solid rgba(94, 39, 3, 0.877);
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.score, .goal, .timer {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 50px;
+}
+.reset, .start, .restart {
+  width: 12vw;
+  height: 6vh;
+  border-radius: 10px;
+}
+.start, .restart {
+  background-color: rgba(63, 30, 4, 0.877);
+  color: white;
+  border-color:black;
+  white-space: nowrap;
+}
+.reset, .buy{
+  background-color: rgba(240, 167, 11, 0.877);
+color: black;
+border-color: rgba(94, 39, 3, 0.877);
+font-weight: bold;
+}
+.reset:hover, .reset:active, .buy:hover, .buy:active {
+  background-color: rgba(94, 39, 3, 0.877);
+color: white;
+border: 2px solid rgba(240, 167, 11, 0.877);
+font-weight: bold;
+}
+.start:hover, .start:active, .restart:hover, .restart:active {
+  background-color:rgba(240, 167, 11, 0.877);
+  color: black;
+  border: 2px solid rgba(94, 39, 3, 0.877);
+  font-weight: bold;
+}
+.bonus {
+  height: 30vh;
+  width: 20vw;
+  background-color:  rgba(240, 167, 11, 0.877);
+  border: 4px solid rgba(94, 39, 3, 0.877);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.drink-bonus, .bomb-bonus, .lucky-charm-bonus{
+  height: 10vh;
+  width: 5vw;
+}
+.coin {
+  height: 3vh;
+  width: 2vw;
+}
+.energy-drink, .bomb, .lucky-charm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.banner {
+  height: 100vh;
+  width: 100vw;
+  display:flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+}
+.instructions {
+  border: 4px solid rgba(240, 167, 11, 0.877);
+  background-color: rgba(238, 149, 66, 0.877);
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
+.gold-miner-promo {
+  border: 4px solid rgba(240, 167, 11, 0.877);
+  height: 70vh;
+  width: 40vw;
+}
+.img-own {
+  height: 69vh;
+  width: 30vw;
+}
+.score-value, .goal-value, .timer-value, .modal-header-self {
+  font-size: 40px;
+  font-weight: bold;
+}
+.score-value, .win-temp {
+  color:rgba(45, 110, 7, 0.877);
+}
+.goal-value, .lose {
+  color: rgba(180, 34, 8, 0.877);
+}
+.timer-value {
+  color:rgba(45, 110, 7, 0.877);
+}
+.modal-self {
+  background-color: rgba(240, 167, 11, 0.877);
+}
+.modal-header-self , .modal-footer-self{
+border: none;
+display: block;
+}
+.cost {
+display: flex;
+flex-direction: row;
+}
+.bonus-type{
+  padding: 2px;
+}
+
+
